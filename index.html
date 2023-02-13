@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionLogin">
+        <div class="login-section-bg-container d-flex flex-column justify-content-center">
+            <div class="container">
+                <div class="row">
+                    <h1 class="login-main-heading mx-auto pb-3">Free Online Courses</h1>
+                    <div class="col-12 ">
+                        <div class="mx-auto login-container pt-3">
+                            <div>
+                                <i class="fas fa-user-circle login-profile-icon pb-2"></i>
+                                <div>
+                                    <input class="login-input" type="email" placeholder="username" id="inputEmail">
+                                </div>
+                                <div class="pt-2">
+                                    <input class="login-input" type="password" placeholder="password" id="inputPassword">
+                                </div>
+                                <p class="text-danger pt-2" id="errorMsg"></p>
+                                <p class="login-forgot-password">Double Click on login</p>
+                                <p class="login-forgot-password">Dont have an account, <i class="fas fa-hand-point-down"></i> Sign Up now</p>
+                                <a class="login-forgot-password d-none" id="loginForgotPara" onclick="display('sectionCreateAccount')">Forgot password ?</a>
+                                <div class="pb-4">
+                                    <button class="btn btn-success" onclick="display('sectionCreateAccount')">Sign Up</button>
+
+                                    <button class="btn btn-secondary" id="loginBtn">Login</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionCreateAccount">
+        <div class="create-account-section-bg-container  d-flex flex-column justify-content-end">
+            <div class="fluid-container">
+                <div class="row">
+
+                    <div>
+                        <div class="col-12 text-center">
+                            <div class="create-account-container pt-5 pb-5">
+                                <p class="create-account-section-para">Enter Email and Password below</p>
+                                <div>
+                                    <input class="create-account-input" type="email" placeholder="email" id="newUserEmail">
+                                </div>
+                                <div class="pt-2">
+                                    <input class="create-account-input" type="password" placeholder="password" id="newUserPassword">
+                                </div>
+                                <p class="login-forgot-password d-none pt-2" id="accountCreatedMsg">Account created</p>
+                                <div class="pt-3" id="createBtnContainer">
+                                    <button class="btn btn-primary" id="createBtn">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionHome">
+        <!-- Bootstrap nav-bar  Element-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary home-nav-bar-bg">
+            <div class="home-section-nav-logo ">
+                <a class="navbar-brand home-section-nav-logo" href="#">G.J.
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#">Python</a>
+                    <a class="nav-link active" href="#">HTML</a>
+                    <a class="nav-link active">CSS</a>
+                    <a class="nav-link active">Java Script</a>
+                </div>
+            </div>
+        </nav>
+
+        <div style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <h1 class="home-section-heading">Courses Available</h1>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2 col-xl-3 mt-3">
+                        <div class="course-card shadow">
+                            <div class="">
+                                <img src="https://res.cloudinary.com/dgyj5r0kg/image/upload/v1676219770/puthon_z2j6jh.jpg" class="course-card-icon-image w-100">
+                                <div class="pt-3">
+                                    <p class="course-card-icon-content">Python is a high-level, general-purpose programming language.
+                                        Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+                                </div>
+                                <i class="fas fa-arrow-to-right "></i>
+                                <a href="" class="course-link">
+                                    Learn Here
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2 col-xl-3 mt-3">
+                        <div class="course-card shadow">
+                            <div>
+                                <img src="https://res.cloudinary.com/dgyj5r0kg/image/upload/v1676220731/html_slwzzh.png" class="course-card-icon-image w-100">
+                                <div class="pt-3">
+                                    <p class="course-card-icon-content">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                                </div>
+                                <i class="fas fa-arrow-to-right "></i>
+                                <a href="" class="course-link">
+                                    Learn Here
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2 col-xl-3 mt-3">
+                        <div class="course-card shadow">
+                            <div>
+                                <img src="https://res.cloudinary.com/dgyj5r0kg/image/upload/v1676220812/css_c73evb.jpg" class="course-card-icon-image w-100">
+                                <div class="pt-3">
+                                    <p class="course-card-icon-content">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide</p>
+                                </div>
+                                <i class="fas fa-arrow-to-right "></i>
+                                <a href="" class="course-link">
+                                    Learn Here
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-2 col-xl-3 mt-3">
+                        <div class="course-card shadow">
+                            <div>
+                                <img src="https://res.cloudinary.com/dgyj5r0kg/image/upload/v1676220967/js_za2kmo.png" class="course-card-icon-image w-100">
+                                <div class="pt-3">
+                                    <p class="course-card-icon-content">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+                                </div>
+                                <i class="fas fa-arrow-to-right "></i>
+                                <a href="" class="course-link">
+                                    Learn Here
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
